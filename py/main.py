@@ -67,7 +67,7 @@ def MainMenu():
     allSpritesList = pygame.sprite.Group()
     buttonList = pygame.sprite.Group()
     
-    playButton = Button((int(resolution[0] / 2), int(resolution[1] / 2)), "Sprites/MainMenuSprites/PlayDefault.png", "Sprites/MainMenuSprites/PlayHover.png", aha, tags=["Button", "MainMenu"])
+    playButton = Button((int(resolution[0] / 2), int(resolution[1] / 2)), "Sprites/MainMenuSprites/PlayDefault.png", "Sprites/MainMenuSprites/PlayHover.png", ChooseSave, tags=["Button", "MainMenu"])
     allSpritesList.add(playButton)
     buttonList.add(playButton)
     
@@ -99,7 +99,10 @@ def MainMenu():
         pygame.display.update()
         clock.tick(30)
 
-def aha():
-    print("cheese")
+def ChooseSave():
+    print("ChooseSave")
+
+def settings():
+    print("Settings")
 
 MainMenu()
